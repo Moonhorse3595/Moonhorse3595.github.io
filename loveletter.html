@@ -19,10 +19,13 @@
             if(times===3) {
                 button.innerHTML = "<span>要告訴你</span>";
             }
-            if(times===4) {
+            if(times>=4 || times>=98) {
+                button.innerHTML = `<span>點到100下就告訴你 你點了${times}下了</span>`;
+            }
+            if(times===99) {
                 button.innerHTML = "<span>就是</span>";
             }
-            if(times===5) {
+            if(times===100) {
                 button.innerHTML = "<span>我喜歡你</span>";
             }
         }
