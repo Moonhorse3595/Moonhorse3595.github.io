@@ -10,23 +10,66 @@
         function ShowText() {
             times++;
             var button = document.getElementById("button1");
-            if(times===1) {
-            button.innerHTML = "<span>繼續按</span>";
+            if(times>=1 && times<=2) {
+            button.innerHTML = `<span>繼續按 你點了${times}下</span>`;
             }
-            if(times===2) {
-                button.innerHTML = "<span>有一件事</span>";
+            if(times>=3 && times<=4) {
+                button.innerHTML = `<span>有一件事 你點了${times}下</span>`;
+                document.body.style.backgroundColor = "purple";
             }
-            if(times===3) {
-                button.innerHTML = "<span>要告訴你</span>";
+            if(times>=5 && times<=6) {
+                button.innerHTML = `<span>要告訴你 你點了${times}下</span>`;
+                document.body.style.backgroundColor = "yellow";
             }
-            if(times>=4 || times>=98) {
+            if(times>=7 && times<=98) {
                 button.innerHTML = `<span>點到100下就告訴你 你點了${times}下了</span>`;
+                document.body.style.backgroundColor = "pink";
             }
             if(times===99) {
-                button.innerHTML = "<span>就是</span>";
+                button.innerHTML = `<span>就是 你點了${times}下</span>`;
             }
-            if(times===100) {
-                button.innerHTML = "<span>我喜歡你</span>";
+            if(times>=100 && times<=110) {
+                button.innerHTML = `<span>我喜歡你 你點了${times}下</span>`;
+                document.body.style.backgroundColor = "cyan";
+            }
+            if(times>=111 && times<=130) {
+                button.innerHTML = `<span>你還在繼續點！ 你點了${times}下</span>`;
+            }
+            if(times>=131 && times<=150) {
+                button.innerHTML = `<span>你很有毅力！ 你點了${times}下</span>`;
+            }
+            if(times>=151 && times<=160) {
+                button.innerHTML = `<span>開始點慢一點！ 你點了${times}下</span>`;
+            }
+            if(times===161) {
+                button.innerHTML = `<span>你是真的在關心我嗎？ 你點了${times}下</span>`;
+            }
+            if(times===162) {
+                button.innerHTML = `<span>還是你只是不信後面還有東西？ 你點了${times}下</span>`;
+            }
+            if(times===163) {
+                button.innerHTML = `<span>這個網站我花了很多時間 你點了${times}下</span>`;
+            }
+            if(times===164) {
+                button.innerHTML = `<span>也看到這是誰才擁有 你點了${times}下</span>`;
+            }
+            if(times===165) {
+                button.innerHTML = `<span>你！ 你點了${times}下</span>`;
+            }
+            if(times===166) {
+                button.innerHTML = `<span>就只有你！ 你點了${times}下</span>`;
+            }
+            if(times===167) {
+                button.innerHTML = `<span>如果更改是可以查的！ 你點了${times}下</span>`;
+            }
+            if(times===168) {
+                button.innerHTML = `<span>但是我不打算更改！ 你點了${times}下</span>`;
+            }
+            if(times===169) {
+                button.innerHTML = `<span>網站是<a href="https://github.com/Moonhorse3595/Moonhorse3595.github.io">這個</a> 你點了${times}下</span>`;
+            }
+            if(times===170) {
+                button.innerHTML = `<span>要歸0了！ 你點了${times}下</span>`;
             }
         }
     </script>
