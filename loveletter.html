@@ -12,10 +12,11 @@
             var button = document.getElementById("button1");
             if(times>=1 && times<=2) {
             button.innerHTML = `<span>繼續按 你點了${times}下</span>`;
+            document.body.style.backgroundColor = "#aaaaaa";
             }
             if(times>=3 && times<=4) {
                 button.innerHTML = `<span>有一件事 你點了${times}下</span>`;
-                document.body.style.backgroundColor = "purple";
+                document.body.style.backgroundColor = "#cccccc";
             }
             if(times>=5 && times<=6) {
                 button.innerHTML = `<span>要告訴你 你點了${times}下</span>`;
@@ -82,7 +83,7 @@
     </script>
 </head>
 <body>
-    <h2>持續按下面按鈕</h2>
+    <h2 style="text-align: center;">持續按下面按鈕</h2>
     <div style="text-align: center; background-color: cyan; padding: 20px; border-radius: 10px;">
         <button class="btn btn-warning" id="button1" onclick="ShowText()"><span>點擊我獲取訊息</span></button>
     </div>
