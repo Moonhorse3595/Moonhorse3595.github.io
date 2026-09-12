@@ -1,11 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>郑骏腾的个人主页</title>
+    <style>
+        :root { --primary: #4f46e5; --text: #1f2937; --muted: #6b7280; --bg: #f8fafc; }
+        * { box-sizing: border-box; }
+        body { margin: 0; color: var(--text); background: var(--bg); font: 16px/1.6 Arial, sans-serif; }
+        header { background: #fff; border-bottom: 1px solid #e5e7eb; }
+        nav { max-width: 1100px; margin: auto; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { color: var(--primary); font-size: 1.25rem; font-weight: 700; }
+        nav a { color: var(--muted); margin-left: 24px; text-decoration: none; }
+        nav a:hover { color: var(--primary); }
+        .hero { max-width: 1100px; margin: auto; padding: 90px 24px 70px; text-align: center; }
+        h1 { margin: 0 0 16px; font-size: clamp(2.2rem, 6vw, 4rem); line-height: 1.15; }
+        .hero p { max-width: 620px; margin: 0 auto 30px; color: var(--muted); font-size: 1.1rem; }
+        .button { display: inline-block; padding: 12px 24px; color: #fff; background: var(--primary); border-radius: 8px; text-decoration: none; }
+        .button:hover { background: #4338ca; }
+        .features { max-width: 1100px; margin: auto; padding: 0 24px 70px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+        .card { padding: 28px; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; }
+        .card h2 { margin-top: 0; font-size: 1.2rem; }
+        .card p { margin-bottom: 0; color: var(--muted); }
+        footer { padding: 24px; color: var(--muted); background: #fff; text-align: center; border-top: 1px solid #e5e7eb; }
+        @media (max-width: 700px) { nav a { margin-left: 12px; font-size: .9rem; } .features { grid-template-columns: 1fr; } }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="logo">郑骏腾的讯息</div>
+            <div><a href="#home">首页</a><a href="#about">关于</a><a href="#contact">联系</a></div>
+        </nav>
+    </header>
+    <main id="home">
+        <section class="hero">
+            <h1>让每一天，都简单一点</h1>
+            <p>这是一个干净、友好且响应式的网页模板。用它展示你的想法、作品和生活。</p>
+            <a class="button" href="#about">了解更多</a>
+        </section>
+        <section class="features" id="about">
+            <article class="card"><h2>关于我</h2><p>我是郑骏腾，一个热爱技术和生活的人。希望通过这个网站分享我的经历和见解。</p></article>
+            <article class="card"><h2>我的技能</h2><p>我擅长后端开发，熟悉Python, C++, Brainfuck, HTML, CSS等技术</p></article>
+            <article class="card" id="contact"><h2>保持联系</h2><p>欢迎分享你的想法，请传到<a href="mailto:timcheng20121202@gmail.com">我的邮箱</a>，一起创造更多美好内容。</p></article>
+        </section>
+    </main>
+    <footer>© 2026 郑骏腾的讯息 · 用心构建每一页</footer>
 </body>
 </html>
